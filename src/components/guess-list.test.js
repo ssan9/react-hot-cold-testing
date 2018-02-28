@@ -14,7 +14,7 @@ describe('<GuessList />', () => {
 		const items = wrapper.find('li');
 		expect(items.length).toEqual(values.length);
 		values.forEach((value, index) => {
-			expect(items.at(index).text()).toEqaul(value.toString());
+			expect(items.at(index).text()).toEqual(value.toString());
 		});
 	});
 });
