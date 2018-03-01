@@ -44,7 +44,7 @@ describe('<Game />', () => {
 
 		wrapper.instance().makeGuess(95);
 		expect(wrapper.state('guesses')).toEqual([25, 60, 80, 95]);
-		expect(wrapper.state('feedback')).toEqual('Ýou\'re Hot!');
+		expect(wrapper.state('feedback')).toEqual('You\'re Hot!');
 
 		wrapper.instance().makeGuess(100);
 		expect(wrapper.state('guesses')).toEqual([25, 60, 80, 95, 100]);
@@ -67,3 +67,4 @@ describe('<Game />', () => {
 		expect(wrapper.state('auralStatus')).toEqual('Here\'s the status of the game right now: You\'re Warm. You\'ve made 3 guesses. In order of most- to least-recent, they are: 90, 3, 25');
 	});
 });
+
