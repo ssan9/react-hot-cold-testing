@@ -8,16 +8,6 @@ describe('<GuessForm />', () => {
 		shallow(<GuessForm />);
 	});
 
-	it('Renders the input field initially', () => {
-		const wrapper = shallow(<GuessForm />);
-		expect(wrapper.hasClass('text')).toEqual(true);
-	});
-
-	it('Should render the submit button', () => {
-		const wrapper = shallow(<GuessForm />);
-		expectwrapper.hasClass('button').toEqual(true);
-	})
-
 	it('Should fire the onMakeGuess callback when the form is submitted', () => {
 		const callback = jest.fn();
 		const wrapper = mount(<GuessForm onMakeGuess={callback} />);
