@@ -35,7 +35,7 @@ describe('<Game />', () => {
 		expect(wrapper.state('feedback')).toEqual('You\'re Ice Cold...');
 
 		wrapper.instance().makeGuess(60);
-		expext(wrapper.state('guesses')).toEqual([26, 60]);
+		expect(wrapper.state('guesses')).toEqual([26, 60]);
 		expect(wrapper.state('feedback')).toEqual('You\'re Cold...');
 
 		wrapper.instance().makeGuess(80);
