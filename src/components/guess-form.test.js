@@ -14,7 +14,7 @@ describe('<GuessForm />', () => {
 		const value = 10;
 		wrapper.find('input[type="number"]').instance().value = value;
 		wrapper.simulate('submit');
-		expect(callback).toHaveBeenCalledWith(value);
+		expect(callback).toHaveBeenCalledWith(value.toString());
 	});
 
 	it('Should not fire onMakeGuess if the input is empty', () => {

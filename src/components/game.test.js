@@ -18,7 +18,7 @@ describe('<Game />', () => {
 		});
 		wrapper.instance().restartGame();
 		expect(wrapper.state('guesses')).toEqual([]);
-		expect(wrapper.state('feedback')).toEqual('Make Your Guess');
+		expect(wrapper.state('feedback')).toEqual('Make Your Guess!');
 		expect(wrapper.state('correctAnswer')).toBeGreaterThanOrEqual(0);
 		expect(wrapper.state('correctAnswer')).toBeLessThanOrEqual(100);
 	});
@@ -32,7 +32,7 @@ describe('<Game />', () => {
 
 		wrapper.instance().makeGuess(25);
 		expect(wrapper.state('guesses')).toEqual([25]);
-		expect(wrapper.state('feedback')).toEqual('Ýou\'re Ice Cold...');
+		expect(wrapper.state('feedback')).toEqual('You\'re Ice Cold...');
 
 		wrapper.instance().makeGuess(60);
 		expext(wrapper.state('guesses')).toEqual([26, 60]);
