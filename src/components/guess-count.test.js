@@ -4,7 +4,7 @@ import {shallow} from 'enzyme';
 import GuessCount from './guess-count';
 
 describe('<GuessCount />', () => {
-	it('Randers without crashing', () => {
+	it('Renders without crashing', () => {
 		shallow(<GuessCount />);
 	});
 
