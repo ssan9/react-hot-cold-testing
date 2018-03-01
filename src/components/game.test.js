@@ -18,7 +18,7 @@ describe('<Game />', () => {
 		});
 		wrapper.instance().restartGame();
 		expect(wrapper.state('guesses')).toEqual([]);
-		expect(wrapper.state('feedback')).toEqual('Make Your Guess!');
+		expect(wrapper.state('feedback')).toEqual('Make your guess!');
 		expect(wrapper.state('correctAnswer')).toBeGreaterThanOrEqual(0);
 		expect(wrapper.state('correctAnswer')).toBeLessThanOrEqual(100);
 	});

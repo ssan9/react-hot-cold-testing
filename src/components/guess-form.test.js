@@ -20,7 +20,7 @@ describe('<GuessForm />', () => {
 	it('Should not fire onMakeGuess if the input is empty', () => {
 		const callback = jest.fn();
 		const wrapper = mount(<GuessForm onMakeGuess={callback} />);
-		expect(callback).not.toHabeBeenCalled();
+		expect(callback).not.toHaveeBeenCalled();
 	});
 
 	it('Should reset the input when the form is submitted', () => {
